@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+}
+
+/*------------- Creating the background--------------- */
+.circle{
+    position: absolute;
+    height: 320px;
+    width: 320px;
+    border-radius: 50%;
+    background: red;
+}
+
+/* Most Left Box */
+.c4{
+    position: relative;
+    top: 180px;
+    left: 50px;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    background: rgba(34, 219, 219, 0.2);
+}
+ 
+/* Right Box */
+.c1{
+    top: 287px;
+    right: 100px;
+    background: rgb(18,213,194);
+    background: linear-gradient(65deg, rgba(18,213,194,0.2) 0%, rgba(218,0,255,0.2) 93%);
+
+}
+
+/* Left Box  */
+.c2{
+    position: absolute;
+    height: 320px;
+    width: 320px;
+    border-radius: 50%;
+    top: 270px;
+    right: 360px;
+    background: rgb(213,148,18);
+    background: linear-gradient(322deg, rgba(213,148,18,0.2) 0%, rgba(255,252,0,0.2) 95%);
+
+    
+}
+
+/* Top Box */
+.c3{ 
+    top: 0px;
+    right: 240px;
+    background-color: blue;
+    background: rgb(18,18,213);
+    background: linear-gradient(180deg, rgba(18,18,213,0.2) 0%, rgba(0,255,231,0.2) 59%);
+}
+/*------------- Ended Creating the background--------------- */
+
+
+.main_body{
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    /* background-color: brown; */
+}
+
+
+/* --------------Started creating the options buttons--------- */
+.main_body .options ul{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    padding-top: 30px;
+    font-size: 20px;
+    display: flex;
+    list-style-type: none;
+}
+
+.main_body .options ul li{
+    margin-left: 20px;
+    transition: all 0.1s ease;
+    cursor: pointer;
+}
+
+.main_body .options ul li:hover{
+    font-weight: 500;
+}
+/* ----------Finished creating the options buttons------- */
+
+
+/*---- Name as a Logo ----- */
+.name{
+    padding: 10px 25px;
+    height:40px;
+    font-size: 50px;
+    text-decoration: underline;
+    font-family: 'Caveat', cursive;
+}
+
+/*---------Started Creating Search Box ---------  */
+.search_box{
+    top: 27px;
+    position: absolute;
+    right: 20px;
+    /* background-color: rgb(232, 232, 19); */
+    align-items: center;
+    display: flex;
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 35px;
+    width: 250px;
+}
+
+.search_box .icon{
+    width: 18%;
+    text-align: center;
+    font-size: 25px;
+    transform: translateY(10%);
+}
+
+.search_box .search{
+    height: 80%;
+    width: 82%;
+    border: none;
+    border-left: 2px solid black;
+    outline: none;
+    padding-left: 7px;
+}
+/*---------Created Search Box ---------  */
+
+/* Started creating the text box */
+
+.text_box{
+    width: 400px;
+    position: absolute;
+    top: 280px;
+    left: 100px;
+}
+
+.text_box p{
+    margin-left: 4px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.text_box h1{
+    font-size: 60px;
+    transform: translateY(-15%); 
+}
+
+.text_box h5{
+    font-size: 35px;
+    font-weight: 400;
+    transform: translateY(-35%); 
+    display: inline-flex;
+}
+
+.text_box h5 p{
+    font-size: 35px;
+    font-weight: 400;
+    padding-left: 10px;
+    color:rgb(16, 220, 220);
+}
+
+.text_box h5 #write_text{
+    left: 160px;
+    position: absolute;
+    overflow: hidden;
+    animation: typing 2s steps(15) infinite;
+}
+
+@keyframes typing {
+    0%{
+        width:0ch;
+    }
+    100%{
+        width: 12ch;
+    }
+}
+
+.text_box .options{
+    width: 300px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background: red; */
+}
+
+.text_box .options .op{
+    height: 30px;
+    width: 100px;
+    background: rgb(0,255,252);
+    background: linear-gradient(144deg, rgba(0,255,252,0.8) 20%, rgba(239,0,255,0.8) 100%);
+    color: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.text_box .options .op:hover{
+    color: #000;
+}
+/* created the text box */
+
+/* Creating Social media section  */
+.social{
+    position: absolute;
+    right: 8px;
+    bottom: 0;
+    height: 25%;
+    width: 2%;
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.social i{
+    font-size: 25px;
+    color: rgb(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.social i:hover{
+    color: rgb(0, 0, 0, 1);
+}

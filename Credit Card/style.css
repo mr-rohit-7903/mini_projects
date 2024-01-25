@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: #fff
+}
+
+.back {
+    height: 700px;
+    background-color: rgb(204, 236, 245);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    height: 225px;
+    width: 375px;
+    border-radius: 30px;
+    background-color: black;
+}
+
+.card header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 30px;
+    width: 50px;
+    margin-right: 10px;   
+}
+
+.logo h5{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.chip img{
+    height: 40px;
+    width: 63px;
+} 
+
+.last {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.number-name {
+    padding-left: 25px;
+}
+
+.number-name p {
+    font-size: 12px;
+}
+
+.number-name h1{
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.number-name h2{
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 22px;
+}
+
+.validity {
+    padding: 45px 25px;
+}
+
+.validity .valid-text{
+    font-size: 12px;
+}
+
+.validity .valid-date{
+    font-size: 18px;
+    font-weight: 100;
+}

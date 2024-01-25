@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+.screen{
+    height: 750px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(60, 190, 158);
+}
+
+.main_box {
+    height: 400px;
+    width: 370px;
+    background-color:#fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(54, 0, 0, 0.3);
+}
+
+.header {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 800;
+    background-color:rgb(54, 151, 126);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.box {
+    height: 50px;
+    width: 320px;
+    display: flex;
+    border-radius: 8px;
+    margin-left: 25px;
+    border: 1px solid rgba(93, 87, 87, 0.4);
+}
+
+.b1{
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.b2 {
+    margin-top: -1px;
+}
+
+.icon {
+    background-color: rgb(54, 151, 126);
+    height: 52px;
+    width: 52px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    margin-top: -1px;
+    margin-left: -1px;
+}
+
+.credentials input{
+    height: 50px;
+    width: 270px;
+    border: 0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: -10px;
+    color: #000000;
+}
+
+input:focus {
+    outline: 0.7px solid rgb(54, 151, 126);
+    box-shadow: 0 0 7px rgba(54, 151, 126, 0.6);
+}
+
+input::placeholder {
+    font-size: 20px;
+    font-weight: 200;
+    color:rgba(43, 43, 43, 0.374)  
+}
+
+h5 {
+    color: rgb(54, 151, 126); 
+    margin-left: 25px;
+    font-size: 20px;
+    font-weight: 200;
+    margin-top: 11px;
+    cursor: pointer;
+}
+
+.login {
+    background-color: rgb(54, 151, 126);
+    height: 50px;
+    width: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-left: 25px;
+    margin-top: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    color: rgb(0, 0, 0); 
+    font-size: 20px;
+    font-weight: 200;
+    bottom: -5px;
+}
+
+.signup {
+    display: flex;
+    justify-content: center;
+}
+
+.login:hover {
+    background-color: rgb(72, 183, 155);
+}
